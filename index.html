@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Moderustic:wght@300..800&display=swap"
+        rel="stylesheet">
     <title>Brea's Weather App</title>
 </head>
 <body>
+    <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city..." required />
-            <input type="submit" value="search" />
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+            <input type="submit" value="search" class="search-form-button" />
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
     <h1>
         San Diego
@@ -20,15 +28,19 @@
     <p>
         Tuesday 12:45, scattered clouds
         <br />
-        Humidity 56%, Wind: 2.13mph
+        Humidity <strong>56%</strong>, Wind: <strong>2.13mph</strong>
     </p>
     </div>
-    <div>
-    🌤️ 78°F
-    </div>
+    <div class="weather-emoji">🌤️</div> 
+    <div class="temperature">78</div> 
+    <div class="fahrenheit">°F</div>
+    
+        </div>
     </main>
+   
     <footer>
         This project was coded by <a href="https://github.com/Breabg" target="_blank"> Brea Gonzales </a> and is hosted on <a href="https://github.com/Breabg/Weather-app-for-Brea" target="_blank"> GitHub </a> and website hosted on <a href="https://breas-app.netlify.app/" target="_blank">Netlify </a>
     </footer>
+    </div>
 </body>
 </html>
